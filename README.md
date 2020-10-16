@@ -1,16 +1,36 @@
-# TEST README
+# Animación para la web 💻
 
-Mensaje
+>Este es un repositorio dedicado a animaciones para la web con CSS, en el estan todos los módulos y clases del curso.
 
+###Tools Notes 📝
 ```json
 {
-    "Data": [1,2,3,4,5]
+    
 }
 ```
 
-> Algun comentario
+### Temario.
+#### Introducción
+* Introducción
+	Propiedades CSS: Transitions | Transform | Animations
 
-* ejemplo1
-* ejemplo2
+#### Transiciones
+* Sintaxis de transiciones
 
-> ...
+```html
+{ <style>
+
+.ball {
+Transition-property: width, height;
+Transition-duration:  .4s, 4000ms;
+Transition-delay: 2s;
+Transition-timing-function: ease;
+}
+
+.ball:hover {
+
+}
+/* sintaxis resumida - transition: width .4s 2s ease; */
+
+</style> }
+```
