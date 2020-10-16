@@ -13,12 +13,14 @@
 #### Introducción
 * Introducción
 	Propiedades CSS: Transitions | Transform | Animations
+	> Class 2
 
 #### Transiciones
 * Sintaxis de transiciones
+	> Class 3
 
 ```html
-{ <style>
+<style>
 
 .ball {
 Transition-property: width, height;
@@ -32,5 +34,21 @@ Transition-timing-function: ease;
 }
 /* sintaxis resumida - transition: width .4s 2s ease; */
 
-</style> }
+</style>
 ```
+
+* Transiciones de Interacción
+	>Class 4
+		Ahora con CSS3 podemos hacer calculos
+
+```html 
+<style>
+
+/* Anotación */
+	n:hover {
+		width: 120px;
+		height: 120px;
+		right: calc(50% - 120px); 
+	}
+	
+</style>```

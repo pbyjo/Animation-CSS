@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 20px;
-    font-size: 18px;
+    font-size: 20px;
     border: 2px solid black;
     height: 100vh;
     display: flex;
@@ -9,29 +9,55 @@ body {
     align-items: center;
 }
 
-.section {
-    
+.container__pelotas {
+    border: 1px gray solid;
+    width: 80%;
+    height: 18%;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
 .pelota {
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    border: 2px solid #FF5A5F;
-    background-color: #087E8B;
-    /* Transition-property: width, height; */
-    Transition-duration: 2000ms;
-    /* Transition-delay: 1s; */
-    Transition-timing-function: ease;
+    transition-duration: 2s;
+    position: absolute;
+    margin: 0 10px;
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: whitesmoke;
 }
 
-.pelota:hover {
+.pelota.a {
+    background-color: tomato;
+    left: 0;
+}
+
+.pelota.b {
+    background-color: steelblue;
+    right: 0;
+}
+
+.container__pelotas:hover .pelota.a {
     width: 120px;
     height: 120px;
-    border-radius: 50%;
-    border: 5px solid #C81D25;
-    background-color: #0B3954;
-}
+    left: calc(50% - 120px);
+    background-color: steelblue;
+    margin: 0;
+} 
+.container__pelotas:hover .pelota.b {
+    width: 120px;
+    height: 120px;
+    right: calc(50% - 120px);
+    background-color: tomato;
+    margin: 0;
+} 
+
 
 /*NOTES:
 Transition-property: width;
@@ -40,3 +66,8 @@ Transition-delay: 2s;
 Transition-timing-function: ease;
 
 sintaxis resumida: transition: width .4s 2s ease;
+
+Ahora con CSS3 se pueden hacer calculos con el atributo calc.
+    width: 120px;
+    height: 120px;
+   /// right: calc(50% - 120px);
