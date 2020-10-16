@@ -1,8 +1,8 @@
 # Animación para la web 💻
 
->Este es un repositorio dedicado a animaciones para la web con CSS, en el estan todos los módulos y clases del curso.
+>Este es un repositorio dedicado a animaciones para la web con CSS, en el estan todos los módulos y clases del curso. Todas las clases las encuentras por commit especificadas.
 
-###Tools Notes 📝
+### Tools Notes 📝
 ```json
 {
     
