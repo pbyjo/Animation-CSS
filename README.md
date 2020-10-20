@@ -50,8 +50,9 @@ Transition-timing-function: ease;
 		height: 120px;
 		right: calc(50% - 120px); 
 	}
-	
-</style>```
+
+</style>
+```
 
 #### Transformaciones CSS
 
@@ -60,12 +61,44 @@ Transition-timing-function: ease;
 		NUEVA PROPIEDAD: Transform
     	transform: rotar | sesgar | posicion | tamaño
 
-```html 
+```html
 <style>
 
 /* Anotación */
 .n {
 	transform: rotate(15deg) skew(25deg) translate(50px) scale(.6);
 }
-	
-</style>```
+
+</style>
+```
+
+* Transformacion de rotación
+	>Class 6
+
+	>una buena practica para crear una transición a un elemento que interactua con el mouse es agregandole un elemento padre a este mismo y desde ahi crear la regla :hover
+
+````html
+<style>
+.container {
+    border: 2px solid black;
+}
+.container:hover .cuadrado {
+   /* transform: rotatey(45deg); */
+   /* transform: rotate(-45deg); */
+   /* transform: rotatex(45deg); */
+   /* transform: rotatez(45deg); */
+   /* transform: rotateX(20deg) rotateY(30deg) rotateZ(45deg); */
+   /* transform: rotate3d(x ,y ,z , rotate); */
+   transform: rotate3d(1, 1, 0, 40deg);
+}
+
+.cuadrado {
+    width: 16vw;
+    height: 20vh;
+    background-color: thistle;
+    color: teal;
+    margin: 20px;
+    transition: .3s;
+}
+</style>
+```

@@ -2,77 +2,36 @@
 body {
     padding: 0;
     margin: 20px;
+    font-family: sans-serif;
     font-size: 20px;
     border: 2px solid black;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.container__pelotas {
-    border: 1px gray solid;
-    width: 80%;
-    height: 18%;
-    display: flex;
-    align-items: center;
-    position: relative;
-    transform: rotate(15deg) skew(25deg) translate(50px) scale(.6);
-}
-
-.pelota {
-    width: 90px;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    transition-duration: 2s;
-    position: absolute;
-    margin: 0 10px;
-    font-family: sans-serif;
-    font-size: 1rem;
     color: whitesmoke;
 }
 
-.pelota.a {
-    background-color: tomato;
-    left: 0;
+.container {
+    border: 2px solid black;
+}
+.container:hover .cuadrado {
+    /* transform: rotatey(45deg); */
+    /* transform: rotate(-45deg); */
+
+    /* transform: rotatex(45deg); */
+    /* transform: rotatez(45deg); */
+    
+    /* transform: rotateX(20deg) rotateY(30deg) rotateZ(45deg); */
+    /* transform: rotate3d(x ,y ,z , rotate); */
+    transform: rotate3d(1, 1, 0, 40deg);
 }
 
-.pelota.b {
-    background-color: steelblue;
-    right: 0;
+.cuadrado {
+    width: 16vw;
+    height: 20vh;
+    background-color: thistle;
+    color: teal;
+    margin: 20px;
+    transition: .3s;
 }
-
-.container__pelotas:hover .pelota.a {
-    width: 120px;
-    height: 120px;
-    left: calc(50% - 120px);
-    background-color: steelblue;
-    margin: 0;
-} 
-.container__pelotas:hover .pelota.b {
-    width: 120px;
-    height: 120px;
-    right: calc(50% - 120px);
-    background-color: tomato;
-    margin: 0;
-} 
-
-
-/*NOTES:
-Transition-property: width;
-Transition-duration: .4s, 4000ms;
-Transition-delay: 2s;
-Transition-timing-function: ease;
-
-sintaxis resumida: transition: width .4s 2s ease;
-
-Ahora con CSS3 se pueden hacer calculos con el atributo calc.
-    width: 120px;
-    height: 120px;
-   /// right: calc(50% - 120px);
-
-NUEVA PROPIEDAD: Transform
-    transform: rotar | sesgar | posicion | tamaño
