@@ -1,3 +1,4 @@
+/* Transform */
 body {
     padding: 0;
     margin: 20px;
@@ -16,6 +17,7 @@ body {
     display: flex;
     align-items: center;
     position: relative;
+    transform: rotate(15deg) skew(25deg) translate(50px) scale(.6);
 }
 
 .pelota {
@@ -71,3 +73,6 @@ Ahora con CSS3 se pueden hacer calculos con el atributo calc.
     width: 120px;
     height: 120px;
    /// right: calc(50% - 120px);
+
+NUEVA PROPIEDAD: Transform
+    transform: rotar | sesgar | posicion | tamaño

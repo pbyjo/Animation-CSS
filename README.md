@@ -38,7 +38,7 @@ Transition-timing-function: ease;
 ```
 
 * Transiciones de Interacción
-	>Class 4
+>Class 4
 		Ahora con CSS3 podemos hacer calculos
 
 ```html 
@@ -50,5 +50,22 @@ Transition-timing-function: ease;
 		height: 120px;
 		right: calc(50% - 120px); 
 	}
+	
+</style>```
+
+#### Transformaciones CSS
+
+* Sintaxis de transformaciones
+	>Class 5
+		NUEVA PROPIEDAD: Transform
+    	transform: rotar | sesgar | posicion | tamaño
+
+```html 
+<style>
+
+/* Anotación */
+.n {
+	transform: rotate(15deg) skew(25deg) translate(50px) scale(.6);
+}
 	
 </style>```
