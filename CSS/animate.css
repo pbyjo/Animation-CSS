@@ -1,4 +1,4 @@
-/* Transform skew */
+/* Trnasformación - Origin */
 body {
     padding: 0;
     margin: 20px;
@@ -19,8 +19,10 @@ body {
     transform-style: preserve-3d;
 }
 .container:hover .cuadrado {
-    /* transform: skew(20deg); */
-    transform: skew(20deg, 15deg);
+    /* transform-origin: X Y; */
+    transform-origin: top left;
+    /* transform-origin: 100% 0%; */
+    transform: rotateZ(40deg);
     background-color: gold;
 }
 .cuadrado {

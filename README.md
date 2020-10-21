@@ -129,7 +129,7 @@ body {
 ```
 
 >Nota: es importante agregar al contenedor la propiedad transform-style para que asi detecte una superficie 3d de su padre (en este caso el body)
-
+	
 		>Con:
 
 		Ejemplos:
@@ -161,4 +161,18 @@ body {
 		.container:hover .cuadrado {
 		transform: skew(20deg);
 		transform: skew(20deg, 15deg); /* Ambos ejes */
+		}
+
+* Transformacion: Punto de origen
+	>Class 10
+
+	>Es el punto a configurar en el eje X y Y desde donde queremos que inicie nuestro transform
+
+		Sintaxis:
+		.container:hover .cuadrado {
+		/* transform-origin: X Y; */
+		/* transform-origin: left top; */
+		transform-origin: 75% 75%;
+		transform: rotateZ(30deg); (Nos permite la transformacion en los dos ejes en una sola linea)
+		background-color: gold;
 		}
