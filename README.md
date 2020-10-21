@@ -153,3 +153,12 @@ body {
 		}
 
 	>Con los dos ejes podriamos modificar la anatomia de nuestro elemento.
+
+* Transformacion por sesgado
+	>Class 9 
+
+		Sintaxis:
+		.container:hover .cuadrado {
+		transform: skew(20deg);
+		transform: skew(20deg, 15deg); /* Ambos ejes */
+		}

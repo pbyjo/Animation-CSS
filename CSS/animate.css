@@ -1,4 +1,4 @@
-/* Transform translate */
+/* Transform skew */
 body {
     padding: 0;
     margin: 20px;
@@ -19,14 +19,14 @@ body {
     transform-style: preserve-3d;
 }
 .container:hover .cuadrado {
-    /* transform: scale(.5); */
-    transform: scale(2, .5);
-    background-color: rebeccapurple;
+    /* transform: skew(20deg); */
+    transform: skew(20deg, 15deg);
+    background-color: gold;
 }
 .cuadrado {
     width: 16vw;
     height: 20vh;
-    background-color: darkgray;
+    background-color: greenyellow;
     color: teal;
     margin: 20px;
     transition: .3s;
