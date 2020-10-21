@@ -102,3 +102,40 @@ Transition-timing-function: ease;
 }
 </style>
 ```
+
+* Transformaciones de translación y perspectiva
+	>Class 7
+		transform: translate(X, Y);
+		
+	>para realizar una translación en el eje Z es necesario agregar una perspectiva a nuestro proyecto, mas especificamente a un contenedor padre de los elementos que quiero transformar.
+
+````html
+<style>
+body {
+	perspective: 200px;
+}
+.container {
+	transform-style: preserve-3d;
+}
+.cuadrado5 {
+    transition: .6s;
+}
+.container:hover .cuadrado5 {
+    transform: translateZ(100px);
+	transform: translate3d(-400px, -200px, 20px); (Combinacion de todos los ejes)
+    background-color: violet;
+}
+</style>
+```
+
+>Nota: es importante agregar al contenedor la propiedad transform-style para que asi detecte una superficie 3d de su padre (en este caso el body)
+
+		>Con:
+
+		Ejemplos:
+		perspective-origin: center; (predeterminado)
+		perspective-origin: bottom;
+		perspective-origin: left;
+		perspective-origin: bottom left;
+
+>Puedo decirle a que lado quiero que haga el translate en eje Z
