@@ -11,8 +11,6 @@ body {
     justify-content: center;
     align-items: center;
     color: whitesmoke;
-    perspective: 500px;
-    /* perspective-origin: bottom left; */
 }
 
 .container {
@@ -21,28 +19,9 @@ body {
     transform-style: preserve-3d;
 }
 .container:hover .cuadrado {
-    transform: translate(10vw);
+    /* transform: scale(.5); */
+    transform: scale(2, .5);
     background-color: rebeccapurple;
-}
-.container:hover .cuadrado2 {
-    transform: translate(0vw, 10vh);
-    background-color: salmon;
-}
-.container:hover .cuadrado3 {
-    transform: translate(-10vw);
-    background-color: cadetblue;
-}
-.container:hover .cuadrado4 {
-    transform: translate(0vw, -10vw);
-    background-color: antiquewhite;
-}
-.container:hover .cuadrado5 {
-    transform: translateZ(100px);
-    background-color: violet;
-}
-.container:hover .cuadrado6 {
-    transform: translate3d(100px, -100px, -100px);
-    background-color: yellow;
 }
 .cuadrado {
     width: 16vw;
@@ -51,44 +30,4 @@ body {
     color: teal;
     margin: 20px;
     transition: .3s;
-}
-.cuadrado2 {
-    width: 16vw;
-    height: 20vh;
-    background-color: forestgreen;
-    color: teal;
-    margin: 20px;
-    transition: .4s;
-}
-.cuadrado3 {
-    width: 16vw;
-    height: 20vh;
-    background-color: firebrick;
-    color: teal;
-    margin: 20px;
-    transition: .5s;
-}
-.cuadrado4 {
-    width: 16vw;
-    height: 20vh;
-    background-color: gold;
-    color: teal;
-    margin: 20px;
-    transition: .6s;
-}
-.cuadrado5 {
-    width: 16vw;
-    height: 20vh;
-    background-color: tomato;
-    color: teal;
-    margin: 20px;
-    transition: .6s;
-}
-.cuadrado6 {
-    width: 16vw;
-    height: 20vh;
-    background-color: bisque;
-    color: teal;
-    margin: 20px;
-    transition: .6s;
 }

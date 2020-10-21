@@ -77,7 +77,7 @@ Transition-timing-function: ease;
 
 	>una buena practica para crear una transición a un elemento que interactua con el mouse es agregandole un elemento padre a este mismo y desde ahi crear la regla :hover
 
-````html
+```html
 <style>
 .container {
     border: 2px solid black;
@@ -106,10 +106,10 @@ Transition-timing-function: ease;
 * Transformaciones de translación y perspectiva
 	>Class 7
 		transform: translate(X, Y);
-		
+
 	>para realizar una translación en el eje Z es necesario agregar una perspectiva a nuestro proyecto, mas especificamente a un contenedor padre de los elementos que quiero transformar.
 
-````html
+```html
 <style>
 body {
 	perspective: 200px;
@@ -139,3 +139,17 @@ body {
 		perspective-origin: bottom left;
 
 >Puedo decirle a que lado quiero que haga el translate en eje Z
+
+* Transformaciones de escala
+	>Class 8
+
+	>A diferencia de translate con eje Z, puedo utilizar el atributo scale con valores de 0 a 1 sin necesitar de una perspectiva en el elemento padre.
+
+		Ejemplo:
+		.container:hover .cuadrado { 
+		transform: scale(1.5);
+		transform: scale(2, .5); /*En dos ejes */
+		background-color: rebeccapurple; 
+		}
+
+	>Con los dos ejes podriamos modificar la anatomia de nuestro elemento.
