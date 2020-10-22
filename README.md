@@ -176,3 +176,29 @@ body {
 		transform: rotateZ(30deg); (Nos permite la transformacion en los dos ejes en una sola linea)
 		background-color: gold;
 		}
+
+#### Animaciones CSS
+
+* Sintaxis
+	>Class 11
+
+	- animation-name: css; /* asignarle un nombre a nuestra animacion creando basicamente una variable para nuestro @keyframes */
+
+	- animation-duration: time; /* Cuanto tiempo dura nuestra animación */
+	- animation-delay: time; /* Delay antes de empezar la animación*/
+	- animation-interation-count: infinite; /* Numero de veces que quiero que se repita */
+	- animation-timing-function: /* Podemos configurar como funciona el suavizado, por defecto esta en ease */
+		>ease, ease-in, ease-out, ease-in-out, linear, cubic-bezier()
+	- animation-direction: reverse; /* Direccion a la que quiero que vaya mi animacion segun los parametros de mi @keyframes. reverse, alternate*/
+	- animation-fill-mode: forwards; /* Valor final que tendra mi animación cuando este se ejecute, en este caso con opcity 0 */ 
+	- animation-play-state: paused; /* Propiedad que me da el estado de la animacion, es util cuando se hace hover */
+
+	>Keyframes sintaxis:
+			@keyframes goldd {
+			0% {
+				opacity: 1;
+			}
+			100% {
+				opacity: 0;
+			}
+			}		
