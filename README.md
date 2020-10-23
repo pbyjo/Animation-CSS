@@ -211,3 +211,19 @@ body {
 	animation-timing-function: steps(fps); /* Esto va en relacion con nuestro animation-duration */
 
 >para personalizar mas a detalle nuestra curva de bezier, podemos usar una herramienta online https://cubic-bezier.com
+
+* Múltiples animaciones
+	>Class 13
+
+	Podemos realizar animaciones y reglas multiples creando nuevos @keyframes y nombrandolas en nuestra misma funcion de animacion.
+		Ejemplo:
+
+		animation-name: move, jump;
+		@keyframes jump {
+			from {
+				transform: translateY(0) scale(1, .8);
+			}
+			to {
+				transform: translateY(-12vh) scale(.6, .8);
+			}
+		}
