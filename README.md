@@ -201,4 +201,13 @@ body {
 			100% {
 				opacity: 0;
 			}
-			}		
+			}	
+
+* Aceleración y curva de bezier
+	>Class 12
+
+	animation-timing-function: linear;
+	animation-timing-function: cubic-bezier(1, 0, 0, 1);	
+	animation-timing-function: steps(fps); /* Esto va en relacion con nuestro animation-duration */
+
+>para personalizar mas a detalle nuestra curva de bezier, podemos usar una herramienta online https://cubic-bezier.com

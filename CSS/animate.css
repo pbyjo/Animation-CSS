@@ -1,4 +1,4 @@
-/* Animaciones - Sintaxis */
+/* cubic bezier */
 body {
     padding: 0;
     margin: 20px;
@@ -122,10 +122,13 @@ body {
     position: relative;
 
         animation-name: move;
-        animation-duration: 1s;
+        animation-duration: 1.5s;
         animation-iteration-count: infinite;
         animation-fill-mode: forwards;
         animation-direction: alternate;
+        /* animation-timing-function: linear; */
+        /* animation-timing-function: steps(340); */
+        animation-timing-function: cubic-bezier(0,1.11,1,-0.08);
 }
 
 @keyframes goldd {
