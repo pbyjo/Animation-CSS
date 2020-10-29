@@ -272,3 +272,11 @@ body {
     }
 ```
 
+* Propiedades animables
+	>Class16
+
+	Existen muchas propiedades de los elementos web que se pueden animar.
+	
+	>Recurso - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties 
+
+	Aqui se pueden ver todas las propiedades css que se pueden animar.
