@@ -1,4 +1,4 @@
-/* Detectar eventos de animaciones con JS */
+/* optimizar render con will-change y developer tools */
 body {
     padding: 0;
     margin: 20px;
@@ -26,8 +26,8 @@ body {
 }
 
 .container2:hover .cuadrado7 {
-    background-color: gold;
-    animation-play-state: paused;  
+    opacity: 0;
+    /* animation-play-state: paused;   */
 }
 .cuadrado7 {
     width: 16vw;
@@ -35,15 +35,16 @@ body {
     border-radius: 50%;
     border: 2px solid black;
     background-color: skyblue;
-    /* transition: .3s; */
+    transition: 2s;
     position: relative;
 
-        animation-name: move, jump;
-        animation-duration: 3s, .3s;
-        animation-iteration-count: infinite, 20;
+        /* animation-name: move, jump; */
+        /* animation-duration: 3s, .3s; */
+        /* animation-iteration-count: infinite, 20; */
         /* animation-fill-mode: forwards; */
-        animation-direction: alternate;
+        /* animation-direction: alternate; */
         animation-timing-function: linear, ease-in-out;
+        will-change: opacity;
 }
 
 @keyframes opacity {

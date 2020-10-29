@@ -247,4 +247,28 @@ body {
             }
         });
 ```
+
+* Optimizar render con will-change y developer tools
+	>Class15
+
+	Con will-change podemos optimizar nuestro render especialmente cuando hacemos opacity y transformaciones, con ello podemos avisarle al navegador antes de hacerlo y no se creen repintados o impresiones extras reduciendo asi los recursos que se consumen.
+
+		will-change: opacity, transform;
+
+	Tambien en las developers tools del navegador en el apartado de animations podemos ver todo el comportamiento y parametros de nuestras animaciones
 	
+```css
+.cuadrado {
+        width: 200px;
+        height: 200px;
+        background-color: #000;
+        transition-duration: 2s;
+        opacity: 1;
+        will-change: opacity, transform;
+    }
+    .container:hover .cuadrado {
+        opacity: 0;
+        transform: scale(1.5, 0.5);
+    }
+```
+
