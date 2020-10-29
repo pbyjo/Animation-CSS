@@ -227,3 +227,24 @@ body {
 				transform: translateY(-12vh) scale(.6, .8);
 			}
 		}
+
+* Detectar eventos de animaciones con JS
+	>Class 14
+
+	Podemos agregar un script para detectar nuestros eventos en css y asi realizar un encadenamiento de animaciones.
+
+```javascript
+	const cuadrado = document.getElementById('cuadrado');
+
+        /* $cuadrado7.addEventListener('nombre del evento', funcion) */ 
+
+        cuadrado.addEventListener('animationend', (event) => {
+
+            /* console.log(event.animationName); */
+            if (event.animationName === 'jump') {
+                cuadrado.style.animationName = 'move stairs';
+                cuadrado.style.animationDuration = '3s';
+            }
+        });
+```
+	
