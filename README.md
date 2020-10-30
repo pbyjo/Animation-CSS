@@ -280,3 +280,29 @@ body {
 	>Recurso - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties 
 
 	Aqui se pueden ver todas las propiedades css que se pueden animar.
+
+#### Web animations API (Animaciones con js)
+
+* element.animate
+	>Class 17
+
+	Con esta propiedad podemos crear animaciones en js, que es parte de la especificación del API de animaciones de javascript.
+
+		$element.animate()
+
+		let animateProperties = {
+		duration: ms // CSS == animation-duration
+		delay: ms  // CSS == animation-delay
+		direction: // CSS == animation-direction
+		easing: // CSS == animation-timing-function - default == 'linear'
+		interactions: // CSS == animation-iteration-count - Infinity != CSS infinite
+		fill: // CSS == animation-fill-mode 
+		iterationStart: 0 - 1 // nativo de JS - frame de comienzo de animación - 0.4 = 40%
+		endDelay: ms, // nativo de JS - tiempo de espera hasta repetir animación
+  		}
+	
+	>Notar que los dos objetos van separados por una ',' simple.
+
+	Para realizar animaciones web podemos usar las técnicas de CSS que ya vimos o JavaScript, JS también nos ofrece una funcionalidad que nos permite crear animaciones de una manera muy similar a CSS, esta funcionalidad se llama anímate, y recibe dos parámetros, el primer, es un arreglo de objetos indicando los estados de la animación, mientras que el segundo parámetro es un objeto con las reglas de la animación.
+
+	Estas reglas son las mismas que en CSS, duration, delay, direction, easing, interations, fill. Pero recibe dos nuevas, iterationStart y endDelay, la primera especifica en qué momento la animación va a comenzar y la segunda determina cuanto tiempo se va a demorar en una animación en su último estado después de que toda la animación termine.
