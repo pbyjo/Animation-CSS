@@ -306,3 +306,35 @@ body {
 	Para realizar animaciones web podemos usar las técnicas de CSS que ya vimos o JavaScript, JS también nos ofrece una funcionalidad que nos permite crear animaciones de una manera muy similar a CSS, esta funcionalidad se llama anímate, y recibe dos parámetros, el primer, es un arreglo de objetos indicando los estados de la animación, mientras que el segundo parámetro es un objeto con las reglas de la animación.
 
 	Estas reglas son las mismas que en CSS, duration, delay, direction, easing, interations, fill. Pero recibe dos nuevas, iterationStart y endDelay, la primera especifica en qué momento la animación va a comenzar y la segunda determina cuanto tiempo se va a demorar en una animación en su último estado después de que toda la animación termine.
+
+* Controlar animaciones 
+	>Class 18
+
+	>Podemos controlar el estado de la animación. Esto podemos hacerlo por medio de botones que disparen la función que queremos. Los métodos que tenemos disponibles podemos verlos en la variable 'animate' en la consola.
+
+	Ej (tomando el ejemplo de la clase anterior):
+
+		```javascript
+		const animation = $element.animate(
+      	keyFrames, animateProperties)
+		  
+		const $playButton = document.getElementById('play');
+		const $pauseButton = document.getElementById('pause');
+		const $stopButton = document.getElementById('stop');
+		const $reverseButton = document.getElementById('reverse');
+
+		$playButton.addEventListener ('click', () => {
+			animation.play();
+		});
+		$pauseButton.addEventListener ('click', () => {
+			animation.pause();
+		});
+		$stopButton.addEventListener ('click', () => {
+			animation.finish();
+		});
+		$reverseButton.addEventListener ('click', () => {
+			animation.reverse();
+		});
+		```
+
+	
