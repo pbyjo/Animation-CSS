@@ -48,7 +48,7 @@ $pauseButton.addEventListener ('click', () => {
     animation.pause();
 });
 $stopButton.addEventListener ('click', () => {
-    animation.finish();
+    animation.cancel();
 });
 $reverseButton.addEventListener ('click', () => {
     animation.reverse();

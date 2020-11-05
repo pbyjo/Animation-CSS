@@ -314,7 +314,7 @@ body {
 
 	Ej (tomando el ejemplo de la clase anterior):
 
-		```javascript
+		``` javascript
 		const animation = $element.animate(
       	keyFrames, animateProperties)
 		  
